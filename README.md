@@ -1,19 +1,7 @@
-#INSTRUCTIONS
-1 install laravel globally with Composer:
-composer global require laravel/installer
+REFLECTION:
+model can be referenced in controller and in php artisian in place of sql queries, this is a simpler and more familiar way to interact with the database to laravel users
 
-2 create a laravel project
+don't need to specify some things like which table the model corresponds to (model name singular of table name), or name of primary key (id), this is convienient because these rarely need to differ from naming conventions
 
-3 start mysql
-
-4 configure new project's env file to use mysql
-these are mysql's default ip and credentials
-DB_CONNECTION=mysql 
-DB_HOST=127.0.0.1 
-DB_PORT=3306
-DB_DATABASE=orm_practice_db
-DB_USERNAME=root
-DB_PASSWORD=
-
-5 php artisian migrate
-this command allows you to modify the mysql database using program code instead of writing it manually
+php artisian can do some commands with models that mysql doesn't 
+php artisan model:show -shows all information about model
